@@ -1,19 +1,19 @@
 package com.example.model;
 
 import org.springframework.data.annotation.Id;
-//import org.springframework.data.mongodb.core.mapping.Document;
-//import org.springframework.data.mongodb.core.mapping.Field;
+import org.springframework.data.mongodb.core.mapping.Document;
+import org.springframework.data.mongodb.core.mapping.Field;
 
-//@Document(collection = "person")
+@Document(collection = "person")
 public class Person {
 
   @Id 
   private String id;
 
-//  @Field(value = "firstName")
+  @Field(value = "firstName")
   private String firstName;
   
-//  @Field(value = "lastName")
+  @Field(value = "lastName")
   private String lastName;
 
   public String getFirstName() {
